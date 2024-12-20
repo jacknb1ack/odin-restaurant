@@ -1,9 +1,11 @@
 export const contactDisplay = () => {
   const main = document.querySelector("main");
 
+  const container = document.createElement("div");
+  container.classList.add("content");
+
   const contactContainer = document.createElement("div");
-  contactContainer.setAttribute("id", "contact-content");
-  contactContainer.classList.add("content");
+  contactContainer.classList.add("contact-content");
 
   const title = document.createElement("h2");
   title.innerHTML = "Contact Us";
@@ -15,5 +17,6 @@ export const contactDisplay = () => {
   phone.innerHTML = "+6221-123456";
 
   contactContainer.append(title, address, phone);
-  main.append(contactContainer);
+  container.append(contactContainer);
+  main.append(container);
 };

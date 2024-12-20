@@ -17,9 +17,11 @@ export const menuDisplay = () => {
 
   const main = document.querySelector("main");
 
+  const container = document.createElement("div");
+  container.classList.add("content");
+
   const menuContainer = document.createElement("div");
-  menuContainer.setAttribute("id", "menu-content");
-  menuContainer.classList.add("content");
+  menuContainer.classList.add("menu-content");
 
   menus.forEach((e, index) => {
     const menuItem = document.createElement("div");
@@ -39,7 +41,8 @@ export const menuDisplay = () => {
 
     menuItem.append(image, title, desc);
     menuContainer.append(menuItem);
+    container.append(menuContainer);
   });
 
-  main.append(menuContainer);
+  main.append(container);
 };
