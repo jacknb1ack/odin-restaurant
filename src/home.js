@@ -2,7 +2,7 @@ export const homeDisplay = () => {
   const main = document.querySelector("main");
 
   const container = document.createElement("div");
-  container.classList.add("content");
+  container.classList.add("content", "active");
 
   const homeContainer = document.createElement("div");
   homeContainer.classList.add("home-content");
