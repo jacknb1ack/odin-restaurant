@@ -63,7 +63,7 @@ main {
 }
 
 #menu-content {
-  display: flex; /* flex */
+  display: none; /* flex */
   flex-wrap: wrap;
   justify-content: center;
   padding: 1rem;
@@ -83,6 +83,15 @@ main {
   background-color: rgba(240, 248, 255, 0.349);
   border-radius: 1rem;
   padding: 1rem;
+}
+
+#contact-content {
+  display: none; /* flex */
+  flex-direction: column;
+  gap: 1rem;
+  width: 50%;
+  margin: 2rem auto;
+  text-align: center;
 }
 
 footer {
